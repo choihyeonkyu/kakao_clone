@@ -1,0 +1,33 @@
+.status-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* 부모의 너비를 다 받는다는 의미이다.. */
+  display: flex;
+  justify-content: center;
+  padding: 5px 3px;
+}
+
+.status-bar__column {
+  width: 33%;
+}
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}
+
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.status-bar__column .fa-battery-full {
+  margin: 0px 5px;
+}
+/* 그냥 justify-content: space-between을 사용하면
+  no service부분이 더 크기가 커서 중심이 맞지 않는다.
+  해결 방법은 위와 같이 사용. 일종의 css hack. 유용함. */

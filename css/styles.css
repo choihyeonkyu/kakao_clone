@@ -1,0 +1,35 @@
+@import "reset.css";
+@import "variables.css";
+/* components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/gear-dot.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
+
+/* screens */
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chatscreen.css";
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #2e363e;
+  background-image: url('https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA0MDdfMjcy%2FMDAxNTg2MjM5MzQwMDA2.Um_7l6KDZl-Cor1BFuuQLUAR7vvLG-IxbSFIKeKkfNsg.ZtSPAK6NpqumYP-dXhYN1wx3B9FnjE1dM5C6_Ab2WGgg.JPEG.audrlf115%2F1586239340154.jpg&type=sc960_832');
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
+  height: 120vh;
+}
+
+#no-mobile {
+  height: 150vh;
+}
